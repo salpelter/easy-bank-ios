@@ -23,4 +23,8 @@ class LoginPage: BaseClass {
     var emailBadFormatMessage: XCUIElement {
         app.staticTexts[Constants.INVALID_EMAIL_FORMAT_MESSAGE]
     }
+    
+    var weakPasswordMessage: XCUIElement {
+        app.staticTexts[Constants.WEAK_PASSWORD_MESSAGE]
+    }
 }

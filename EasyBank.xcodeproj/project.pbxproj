@@ -71,6 +71,13 @@
 			remoteGlobalIDString = 60E2143F2C2DAFD10054FDD3;
 			remoteInfo = EasyBank;
 		};
+		8724ACE72F68385E007D7E75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E214382C2DAFD10054FDD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E2143F2C2DAFD10054FDD3;
+			remoteInfo = EasyBank;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +134,7 @@
 		60E214AD2C38422A0054FDD3 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		60E214B02C3842680054FDD3 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		7EBBE1952D5950080015222B /* EasyBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8724ACE12F68385E007D7E75 /* EasyBankUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBankUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -146,6 +154,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7EBBE1922D5950080015222B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8724ACDE2F68385E007D7E75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +299,7 @@
 			children = (
 				60E214402C2DAFD10054FDD3 /* EasyBank.app */,
 				7EBBE1952D5950080015222B /* EasyBankUITests.xctest */,
+				8724ACE12F68385E007D7E75 /* EasyBankUITest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -552,6 +568,26 @@
 			productReference = 7EBBE1952D5950080015222B /* EasyBankUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8724ACE02F68385E007D7E75 /* EasyBankUITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8724ACE92F68385E007D7E75 /* Build configuration list for PBXNativeTarget "EasyBankUITest" */;
+			buildPhases = (
+				8724ACDD2F68385E007D7E75 /* Sources */,
+				8724ACDE2F68385E007D7E75 /* Frameworks */,
+				8724ACDF2F68385E007D7E75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8724ACE82F68385E007D7E75 /* PBXTargetDependency */,
+			);
+			name = EasyBankUITest;
+			packageProductDependencies = (
+			);
+			productName = EasyBankUITest;
+			productReference = 8724ACE12F68385E007D7E75 /* EasyBankUITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -566,6 +602,10 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					7EBBE1942D5950080015222B = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 60E2143F2C2DAFD10054FDD3;
+					};
+					8724ACE02F68385E007D7E75 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 60E2143F2C2DAFD10054FDD3;
 					};
@@ -590,6 +630,7 @@
 			targets = (
 				60E2143F2C2DAFD10054FDD3 /* EasyBank */,
 				7EBBE1942D5950080015222B /* EasyBankUITests */,
+				8724ACE02F68385E007D7E75 /* EasyBankUITest */,
 			);
 		};
 /* End PBXProject section */
@@ -606,6 +647,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7EBBE1932D5950080015222B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8724ACDF2F68385E007D7E75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -676,6 +724,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8724ACDD2F68385E007D7E75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -683,6 +738,11 @@
 			isa = PBXTargetDependency;
 			target = 60E2143F2C2DAFD10054FDD3 /* EasyBank */;
 			targetProxy = 7EBBE19B2D5950080015222B /* PBXContainerItemProxy */;
+		};
+		8724ACE82F68385E007D7E75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E2143F2C2DAFD10054FDD3 /* EasyBank */;
+			targetProxy = 8724ACE72F68385E007D7E75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -905,6 +965,40 @@
 			};
 			name = Release;
 		};
+		8724ACEA2F68385E007D7E75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ge.tbc.testautomation.EasyBankUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyBank;
+			};
+			name = Debug;
+		};
+		8724ACEB2F68385E007D7E75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ge.tbc.testautomation.EasyBankUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyBank;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -931,6 +1025,15 @@
 			buildConfigurations = (
 				7EBBE19E2D5950080015222B /* Debug */,
 				7EBBE19F2D5950080015222B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8724ACE92F68385E007D7E75 /* Build configuration list for PBXNativeTarget "EasyBankUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8724ACEA2F68385E007D7E75 /* Debug */,
+				8724ACEB2F68385E007D7E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

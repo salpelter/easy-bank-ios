@@ -21,4 +21,15 @@ class LoginTests: LoginSteps {
             .clickOnLogInButton()
             .verifyInvalidEmailMessageText()
     }
+    
+    func testLoginWithValidEmailAndWeakPassword() {
+        entrySteps
+            .clickOnLogInButton()
+        
+        loginSteps
+            .enterEmail(email: Constants.VALID_EMAIL)
+            .enterPassword(password: Constants.WEAK_PASSWORD)
+            .clickOnLogInButton()
+            .verifyWeakPasswordMessageText()
+    }
 }

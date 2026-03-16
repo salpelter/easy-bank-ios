@@ -33,4 +33,10 @@ class LoginSteps: LoginPage {
         
         return self
     }
+    
+    func verifyWeakPasswordMessageText() -> LoginSteps {
+        XCTAssertEqual(weakPasswordMessage.label, Constants.WEAK_PASSWORD_MESSAGE)
+        
+        return self
+    }
 }
