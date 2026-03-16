@@ -7,8 +7,8 @@
 
 import XCTest
 
-final class EasyBankUITests: PageClasss {
-    let pageClasss = PageClasss()
+final class EasyBankUITests: PageClass {
+    let pageClasss = PageClass()
     
     func testExample() {
 
