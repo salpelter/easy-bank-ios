@@ -13,4 +13,10 @@ class EntrySteps: EntryPage {
         
         return self
     }
+    
+    func clickOnRegisterButton() -> EntrySteps {
+        registerButton.tap()
+        
+        return self
+    }
 }

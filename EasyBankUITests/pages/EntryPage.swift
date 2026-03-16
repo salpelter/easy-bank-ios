@@ -11,4 +11,8 @@ class EntryPage: BaseClass {
     var logInButton: XCUIElement {
         app.buttons["Log In"]
     }
+    
+    var registerButton: XCUIElement {
+        app.buttons["Register"]
+    }
 }
